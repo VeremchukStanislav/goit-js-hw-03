@@ -26,11 +26,19 @@ const user = {
 };
 
 //Write code under this line
+user.mood = `happy`;
+user[`full time`] = true;
+user.hobby = `skydiving`;
+user.premium = false;
+console.log(user);
 
 const keys = Object.keys(user);
 // Write code under this line
+for (const key of keys) {
+  message += `${key} : ${user[key]}\n`;
+}
 
-//console.log(message);
+console.log(message);
 /*
 'age : 20 
 hobby : skydiving 
